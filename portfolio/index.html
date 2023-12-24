@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e55b425d9e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.jpg" class="logo" alt="Portfolio" height="150px" width="350px">
+                <ul id="sidemenu">
+                    <li><a href="#header">INTRO</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#hobbies">HOBBIES</a></li>
+                    <li><a href="#portfolio">MY WORK</a></li>
+                    <i class="fas fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Welcome to my Portfolio</p><br>
+                <h1>Hello! I am <span>Prachi Singh</span>. <br>Currently I am pursuing<br><span> BTech CSE AIML</span>.
+                </h1>
+            </div>
+        </div>
+    </div>
+    <!----ABOUT SECTION---->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="abt1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subt">About Me</h1>
+                    <p class="para">My name is Prachi Singh, and my portfolio is a representation of all that I've
+                        learned and accomplished as a science and engineering student.<br>
+                        I was born in Varanasi and raised in Noida, a city in Uttar Pradesh. I am in second year and
+                        pursuing BTech CSE Artificial Intelligence & Machine Learning from ABES Engineering
+                        College,Ghaziabad.<br>
+                        My educational details,skills and experiences have been mentioned below. Please spare some time
+                        to have a look on them.
+                    </p>
+                    <div class="tabt">
+                        <div class="tab-links skill" onclick="opentab('skills')">SKILLS</div>
+                        <div class="tab-links" onclick="opentab('experience')">EXPERIENCE</div>
+                        <div class="tab-links" onclick="opentab('education')">EDUCATION</div>
+                    </div>
+                    <div class="tab-content t1" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Designing and developing websites</li>
+                            <li><span>Python Programming</span></li>
+                            <li><span>C Programming</span></li>
+                            <li><span>MySQL</span><br>Management of databases</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="experience">
+                        <ul>
+                            <li><span>Web Development Intern</span><br><strong>15 Dec 2023-15 Jan
+                                    2023</strong><br>Intern at Oasis Infobyte
+                                <br>Formed a Landing page using HTML & CSS
+                                <br>Develop a personal portfolio using HTML,CSS & JS
+                                <br>Created a Temperature Converter Website
+                            </li>
+                            <li><span>Python Programming Intern</span><br><strong>15 Dec 2023-15 Jan
+                                    2023</strong><br>Intern at Oasis Infobyte</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>2022-2026</span><br><strong>ABES Engineering College</strong><br>BTech CSE
+                                Artificial Intelligence and Machine Learning</li>
+                            <li><span>2021-2022</span><br><strong>Assisi Convent
+                                    School</strong><br>CBSE<br>Intermediate- PCM with CS<br><u>Grade:87%</u></li>
+                            <li><span>2019-2020</span><br><strong>Assisi Convent
+                                    School</strong><br>CBSE<br>Matric<br><u>Grade: 93%</u></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----- HOBBIES ----->
+    <div id="hobbies">
+        <div class="container">
+            <h1 class="subt">Hobbies</h1>
+            <div class="hobbies-list">
+                <div>
+                    <i class="fa-solid fa-palette"></i>
+                    <h2>Art</h2>
+                    <p>Art is basically a journey Of self-discovery through creativity. It is a hobby that has helped me
+                        discover more about myself and the world around me. I find doodling most interesting.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-music"></i>
+                    <h2>Dance</h2>
+                    <p>Everything in the universe has rhythm.<br> Everything Dances.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-book-open-reader"></i>
+                    <h2>Reading</h2>
+                    <p>Reading novels is something that i find interesting and it improves my vocabulary</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----MY WORK---->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subt">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work1.png">
+                    <div class="layer">
+                        <h3>Responsive Form</h3>
+                        <p>This is the responsive survey form made using HTML & CSS </p>
+                        <a href="https://tangerine-gnome-adb1b4.netlify.app/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work2.png">
+                    <div class="layer">
+                        <h3>Career Guidance</h3>
+                        <p>This is a Career Guidance frontend webpage</p>
+                        <a href="https://harmonious-cajeta-f6bd24.netlify.app/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="drive.png">
+                    <div class="layer">
+                        <h3>intelliJ Drive</h3>
+                        <p>A website which is a detailed info of AI in Autonomous vehicles made using HTML, CSS &
+                            Bootstrap.
+                        </p>
+                        <a href="https://intellij-drive.netlify.app/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-content");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("skill");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("t1");
+            }
+            event.currentTarget.classList.add("skill");
+            document.getElementById(tabname).classList.add("t1");
+        }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
